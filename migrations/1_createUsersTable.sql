@@ -1,0 +1,4 @@
+CREATE TABLE Users(
+    id SERIAL PRIMARY KEY UNIQUE,
+    email VARCHAR(40)
+);
