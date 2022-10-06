@@ -1,4 +1,6 @@
 /*
 Seleccionar los posts con y sin comentarios
 */
-select us.email,us.id, cm.content  from comments cm full outer join Users us ON us.id = cm.users_id;
+select ps.id, cm.content from comments cm full outer join posts ps
+ON ps.id = cm.posts_id 
+order by cm.posts_id;
